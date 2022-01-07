@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>The Nest Blog</title>
+        <link>https://your-docusaurus-test-site.com/blog</link>
+        <description>The Nest Blog</description>
+        <lastBuildDate>Thu, 06 Jan 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Grand Opening!]]></title>
+            <link>https://your-docusaurus-test-site.com/blog/grand-opening</link>
+            <guid>grand-opening</guid>
+            <pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hi there! This is the very first blog post of The Nest.]]></description>
+            <content:encoded><![CDATA[<p>Hi there! This is the very first blog post of The Nest.</p><p>I&#x27;ve been thinking about setting up a personal website so that I can access my notes from anywhere. I love my note taking apps but sometimes it&#x27;s annoying that I only have my valuable stuff on my working computer. Besides, my partner and I wanted to start keeping docs on somewhere other than Google Drive, both as motivation to learn more stuff and keep record of our progress.</p><p>Anyway, this website is probably going to contain random posts and notes for all kinds of stuff. I&#x27;ll mainly work on cybersecurity and things I recently encountered on work, while Steven might be documenting some of his own studies. We hope to also continue our language learning endeavors. And probably some travel blogs or rambles.</p><p>That&#x27;s it for now!</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
