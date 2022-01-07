@@ -8,13 +8,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'The Nest',
   tagline: 'Scrambled rambles',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://crystalwwj.github.io/the-nest/',
+  baseUrl: '/the-nest',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'The Nest', // Usually your GitHub org/user name.
-  projectName: 'The Nest', // Usually your repo name.
+  organizationName: 'crystalwwj', // Usually your GitHub org/user name.
+  projectName: 'the-nest', // Usually your repo name.
 
   presets: [
     [
@@ -57,7 +57,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/crystalwwj/the-nest/edit/mainfacebook/docusaurus',
+            href: 'https://github.com/crystalwwj/the-nest/edit/main',
             label: 'GitHub',
             position: 'right',
           },
