@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkthe_nest_new=self.webpackChunkthe_nest_new||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Grand Opening!","permalink":"/blog/grand-opening"},{"title":"Welcome","permalink":"/blog/welcome"}]}')}}]);
