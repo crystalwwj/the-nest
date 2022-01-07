@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'The Nest',
   tagline: 'Scrambled rambles',
-  url: 'https://crystalwwj.github.io/the-nest/',
-  baseUrl: '/the-nest',
+  url: 'https://crystalwwj.github.io/',
+  baseUrl: '/the-nest/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
