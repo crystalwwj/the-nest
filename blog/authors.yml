@@ -19,9 +19,9 @@ slorber:
 crystal:
   name: Crystal
   title: The Miss part of The Nest
-  image_url: /img/logo.svg
+  image_url: https://user-images.githubusercontent.com/29170860/148643483-075fe28b-50fa-4b01-a59a-7b9953e1100e.jpg
 
 steven:
   name: Steven
   title: The Mister part of The Nest
-  image_url: /img/logo.svg
+  image_url: https://user-images.githubusercontent.com/29170860/148643476-9d566572-5ba5-47d8-83ea-eb9ed1c2e87b.jpg
