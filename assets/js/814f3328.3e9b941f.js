@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkthe_nest_new=self.webpackChunkthe_nest_new||[]).push([[631],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Recent changes...","permalink":"/the-nest/blog/first-job-switch"},{"title":"Grand Opening!","permalink":"/the-nest/blog/grand-opening"}]}')}}]);
