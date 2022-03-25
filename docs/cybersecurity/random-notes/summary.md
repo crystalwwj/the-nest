@@ -114,3 +114,28 @@ Unfortunately, the `CheckAuthData` in accountsservice is `0x40`, so the mismatch
 ### Takeaways and Notes
 * Textbook UAF taught us to write chunk with shellcode or ROP chain, leak addrs, then jump over, but sometimes it's more useful to see where the chunk might get allocated and what data you can overwrite! Privesc doesn't always need revshell
 * Can do a bit of research on possible exploitable type combinations in different languages, e.g `static` and `g_autofree` variables
+
+
+## \[RCE\] 静态站点托管平台仅能托管静态资源？
+
+* CVE: N/A
+* Author: zjun
+* [静态站点托管平台仅能托管静态资源？](https://tttang.com/archive/1501/)
+* Categories: RCE, Cloud
+* Keywords: container security, static site generator
+
+### Description
+
+Several cloud hosting services support various static site generation frameworks, which often allow us to build and run with custom commands. Though such commands should always be executed in a low-privileged restricted container, cloud services are too commmonly misconfigured. In this post, the author explores several platforms, including 4everland, vercel, and netlify. A friend also discovered that Cloudflare has the same vulnerability.
+
+### Exploit
+
+4everland, an IPFS build on web3, runs on AliCloud and executes commands as **root**, but the site has protections in place to restrict available commands and container escape. The author did not successfully pop a reverse shell.
+
+Vercel, similar to GitHub pages, runs on AWS and also executes commands as **root**, but allows much more commands. The author can pop a reverse shell by installing `nc` with yum or via python. The downside is that the job timeouts after 45 minutes, so it's harder to obtain persistent access.
+
+Netlify, also similar to GitHub pages, runs on AWS, but executes commands as a low-priv user `buildbot`. We can't install packages without root privileges, so this case isn't of much use.
+
+Our friend was using Cloudflare and found the same issue. Commands are run as **root** but timeouts pretty quickly, and the platforms become unusable for a while. The kernel version is out of date so there probably are kernel weaknesses that we can exploit to escalate privileges or escape the container, but we haven't confirmed this.
+
+In all, unless we can escape the container or laterally move to other machines, this weakness isn't too valuable. If you just want to use free containers though, it's a nice feature ;D
